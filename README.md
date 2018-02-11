@@ -269,7 +269,7 @@ To create multiple players a player class can be instantiated for each. We estab
 The players can be distinguished by having each player have thier own name. The players can say the "name" of the character before the request to indicate wich player to use when calculating the event. The tjbot can also repeat the player names and thier description if someone forgets who is in the party. 
 
 
-### Software Design
+### Preliminary Software Design
 
 JSON DataSets :
 
@@ -280,7 +280,11 @@ JSON DataSets :
 Game State Software Diagram :
 
 
-![lec01](reference/tjbot_v1.PNG "diagram")
+![lec01](reference/img/tjbot_v1.PNG "diagram")
 
 
-The 
+# Software Design
+
+The initial work focused on defining the scope and sketching out the most useful features given the technology we want to use. This software design section is to break out the requirements and the initial sketches in a more controlled way. I want to really flesh out the inputs and outputs of the system at a very high level. Then I will dive deeper and deeper at each section.
+The final design will have the features broken down into functional sections that can be tested individually. 
+
