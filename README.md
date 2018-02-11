@@ -288,3 +288,20 @@ Game State Software Diagram :
 The initial work focused on defining the scope and sketching out the most useful features given the technology we want to use. This software design section is to break out the requirements and the initial sketches in a more controlled way. I want to really flesh out the inputs and outputs of the system at a very high level. Then I will dive deeper and deeper at each section.
 The final design will have the features broken down into functional sections that can be tested individually. 
 
+![lec01](reference/img/tjbot_2.PNG "diagram")
+
+Lets highlight the IO functionality that will need to be tested in order to verify the system at this level. In the image below we see the division more clearly in terms of functionality. I created hardware and software distinctions and was able to see the use of a I/O handler layer. 
+
+![lec01](reference/img/tjbot_3.PNG "diagram")
+
+On the other side of the IO Handler is the Game engine and some other useful software modules. The modules are 
+
+* System Diagnostic : An initial software module that will be used to boot up the tjbot and assume any diagnostic tests of the hardware. Such as Unit Tests. This will be the layer we can build on while the other software modules are bieng developed. 
+
+* Standby Mode (Intro/Demo/Tests) : module will house all the higher level testing. We can build out small demos to test more end-to-end outputs of the system. This could also house the "introduction" mode for the tjbot before it starts to curate a game. 
+
+* Game Manager : The running game needs a way to startup and a way to be monitored. This module will contain all the needed data processing and storing of the data for handling new games, or loading old ones. We would also handle unuexpected game conditions here as a last resort.
+
+* Game Engine : All the magic happens here. Once complete the game engine will have rules to process the game variables and generate new information to be passed on to the user. 
+
+## Diving Deeper
