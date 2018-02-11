@@ -304,4 +304,62 @@ On the other side of the IO Handler is the Game engine and some other useful sof
 
 * Game Engine : All the magic happens here. Once complete the game engine will have rules to process the game variables and generate new information to be passed on to the user. 
 
-## Diving Deeper
+## I/O Handler
+
+High Level Psuedo code that shows all the I/O handler methods required to support the system inputs and outputs as described above. 
+
+
+```Javascript
+//------------------------------
+// IO Handler
+//------------------------------
+
+var rpio = require('rpio'),
+var watson = require('watson-developer-cloud'),
+var exec = require('child_process').execSync,
+
+//IBM BlueMix Authentication 
+var fs = require('fs');
+var config = JSON.parse(fs.readFileSync('bluemix_auth.json','utf8'));
+
+//IBM Watson - Speech to Text Service
+var Ispeech_to_text = {
+    //...
+}
+modules.export = Ispeech_to_text;
+
+
+
+//IBM Watson - Text to Speech Service
+var Itext_to_speech = {
+    //...
+}
+modules.export = Itext_to_speech;
+
+
+//IBM Watson - Conversation Service
+var Iconversation = {
+    //...
+}
+modules.export = Iconversation;
+
+
+//Local File IO 
+var Ifileio = {
+    //...
+}
+modules.export = Ifileio;
+
+//LED RGB 
+var Iled ={
+    //..
+}
+modules.export = Iled;
+
+//Arm Servo 
+var Iarm ={
+    //..
+}
+modules.export = Iarm;
+
+```
