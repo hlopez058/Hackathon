@@ -1,46 +1,27 @@
 //------------------------------
 // IO Handler
 //------------------------------
-/*var rpio = require('rpio');
-var watson = require('watson-developer-cloud');
-var exec = require('child_process').execSync;
+/*
 
-//IBM BlueMix Authentication 
-var fs = require('fs');
-var config = JSON.parse(fs.readFileSync('bluemix_credentials.json','utf8'));
+TODO: 
+1. Create a Visual REconition Service Interface
+2. Troubleshoot Speech-text service 
+3. implement all services with RPI hardware
+4. Unit tests to verify iohandler is still working with drivers
+5. Unit test for npm packages 
 
 //IBM Watson - Visual Recognition Service
 var visual_recognition = new watson.VisualRecognitionV1({
   username: config.visual_recognition.username,
   password: config.visual_recognition.password,
     version_date: '2017-05-26'
-});
-//TODO : Visual Recognition Interface
-
-//LED RGB 
-var Iled ={
-    state:null,
-    create: function(state){
-        obj = Object.create(this);
-        this.state = state;
-    },
-    init : function(LIGHT_PIN){
-        rpio.open(LIGHT_PIN,rpio.OUTPUT,rpio.LOW);
-    
-    },
-    reset:function(){
-        process.on('SIGINT', function () {
-            this.init();
-            process.nextTick(function () { process.exit(0); });
-        });
-    }
-    //..
-}
-exports.Iled = Iled;
+})
 
 */
 
-
+//----------------------------------------------
+// WATSON API'S
+//----------------------------------------------
 //IBM Watson - Speech to Text Service
 var Ispeech_to_text = {
     speech_to_text:null,
@@ -94,23 +75,19 @@ var Ispeech_to_text = {
                     content_type: 'audio/l16; rate=44100; channels=2',
                     model: 'en-US_BroadbandModel'
                 }));
-
         textStream.setEncoding('utf8');
         
-
         textStream.on('data', function(str) {
-            //callback(str);
-            console.log(str);
+            callback(str);
+            //console.log(str);
         });
         
         textStream.on('error', function(err) {
-          
             callback(str);
         });
     }
 }
 exports.Ispeech_to_text = Ispeech_to_text;
-
 
 //IBM Watson - Text to Speech Service
 var Itext_to_speech = {
@@ -143,6 +120,7 @@ var Itext_to_speech = {
            };
         
         // Streaming the resulting audio to file and play the file using aplay 
+        var exec = require('child_process').execSync;        
         var fs = require('fs');
         this.text_to_speech
             .synthesize(params)
@@ -158,8 +136,6 @@ var Itext_to_speech = {
     },
 }
 exports.Itext_to_speech = Itext_to_speech;
-
-
 
 //IBM Watson - Conversation Service
 var Iconversation = {
@@ -197,6 +173,10 @@ var Iconversation = {
 }
 exports.Iconversation = Iconversation;
 
+
+//----------------------------------------------
+// FILE MANAGER
+//----------------------------------------------
 //Local File IO 
 var IfileIO = {
     path:null,
@@ -243,3 +223,49 @@ var Itest = {
     }
 }
 exports.Itest = Itest;
+
+//----------------------------------------------
+// HARDWARE PERIPHERALS
+//----------------------------------------------
+//Servo Interface 
+var IServo = {
+    state:null,
+    msg:null,
+    create: function(state){
+        var obj = Object.create(this);
+        obj.state = state;
+        obj.msg = state;
+        return obj;
+    },
+    init : function(msg){
+        this.msg=msg;
+    },
+    read:function(){
+        return "Hello World; " + this.msg;
+    }
+}
+exports.IServo = IServo;
+
+//LED Interface 
+var ILed = {
+    state:null,
+    msg:null,
+    create: function(state){
+        var obj = Object.create(this);
+        obj.state = state;
+        obj.msg = state;
+        return obj;
+    },
+    init : function(LIGHT_PIN){
+        var rpio = require('rpio');
+        rpio.open(LIGHT_PIN,rpio.OUTPUT,rpio.LOW);
+    },
+    reset:function(){
+        process.on('SIGINT', function () {
+            this.init();
+            process.nextTick(function () { process.exit(0); });
+        });
+    }
+}
+exports.ILed = ILed;
+
