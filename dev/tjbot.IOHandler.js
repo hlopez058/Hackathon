@@ -1,6 +1,6 @@
 //------------------------------
 // IO Handler
-//------------------------------
+//==============================
 /*
 
 TODO: 
@@ -85,6 +85,10 @@ var Ispeech_to_text = {
         textStream.on('error', function(err) {
             callback(str);
         });
+    },
+    test:function(callback){
+        //TODO : Create a Unit Test
+        callback("Speech-To-Text Unit Test: Not Implemented");  
     }
 }
 exports.Ispeech_to_text = Ispeech_to_text;
@@ -126,14 +130,18 @@ var Itext_to_speech = {
             .synthesize(params)
             .pipe(fs.createWriteStream(this.binpath+"\\"+'output.wav'))
             .on('close', function(){
-                /*var create_audio = exec('aplay output.wav', 
+                var create_audio = exec('aplay output.wav', 
                     function(error, stdout, stderr) {
                         if (error !== null) {
                             console.log('Error occurred while playing back: ' + error);
-                    }});*/
+                    }});
                 console.log("Audio not supported : run output.wav file manually")
             });    
     },
+    test:function(callback){
+        //TODO : Create a Unit Test
+        callback("Text-To-Speech Unit Test: Not Implemented");  
+    }
 }
 exports.Itext_to_speech = Itext_to_speech;
 
@@ -169,6 +177,19 @@ var Iconversation = {
             else
                 callback(response.output.text); 
         });
+    },
+    test:function(callback){
+        this.conversation.message(
+            {
+                workspace_id:this.workspace_id,
+                input: {'text': "Hello"}
+            },  
+        function(err, response) {
+             if (err)
+                callback("Conversation Unit Test: FAIL"); 
+             else
+                 callback("Conversation Unit Test: PASS"); 
+         });  
     }
 }
 exports.Iconversation = Iconversation;
@@ -201,7 +222,10 @@ var IfileIO = {
             console.log(array[i]);
         }
     },
-    //...
+    test:function(callback){
+        //TODO : Create a Unit Test
+        callback("FileIO Unit Test: Not Implemented");  
+    }
 }
 exports.IfileIO = IfileIO;
 
@@ -242,6 +266,10 @@ var IServo = {
     },
     read:function(){
         return "Hello World; " + this.msg;
+    },
+    test:function(callback){
+        //TODO : Create a Unit Test
+        callback("Servo Unit Test: Not Implemented");  
     }
 }
 exports.IServo = IServo;
@@ -265,6 +293,10 @@ var ILed = {
             this.init();
             process.nextTick(function () { process.exit(0); });
         });
+    },
+    test:function(callback){
+        //TODO : Create a Unit Test
+        callback("LED Unit Test: Not Implemented");  
     }
 }
 exports.ILed = ILed;

@@ -1,0 +1,313 @@
+{
+    "Rafferty Tannerson": "human F2: AC 12 (leather); MV 30;
+hp 14; ATK +1;  Dmg 1d6 (club); SZ M (5™ 9lès
+tall); ML elite (14); Int average (9); AL NG; XP 35.
+Personality: Gruff, abrupt.",
+
+
+"Dell Tannerson":"hm F0; AC 10; MV 30; hp 5; SZ M (5’
+11” tall); ML steady (12); Int average (8); AL NG; XP 15.
+Personality: Open, trusting, outgoing (to the point of
+being annoying).",
+
+"Draft Horses":"AC 13; move 40; ATK + 3 dmg 1d3 HD 3
+SZ L; ML unsteady (6); Int animal (1); AL N; XP 65.
+",
+
+"Goblins (5)": "AC 14; MV 20; HD 1-1; hp 5 each;
+ ATK+0; #AT 1; Dmg 1d6 (short swords); SZ S  ML average (10); Int low (5); AL LE; XP 15.
+",
+
+"Goblin leader":" AC 5 (chain mail); MV 6; HD 1; hp 8; ATK+2; #AT 1; Dmg 1d6 (short sword); SZ S (4’); ML average (10); Int low (7); AL LE; XP 35.
+",
+
+"Goblin Archer": "AC 15(chain mail) move 20; HD 1; HP 5; ATK +0;  DMG 1d6 flight arrows or 1d4 dagger SZ S (4™); ML average (10); Int low (6); AL LE; XP 35.
+",
+
+"Intoxicated Ogre": "AC 15 (12 due to intoxication); MV 20; HD
+4+1; hp 18; ATK+3 (+1 due to intoxication); #AT
+1; Dmg 1d10+2 (fists); 
+SZ L (9’); ML fearless (20) due tointoxication; Int low (7); AL CE; XP 270.",
+
+"Wounded Yeti (1)": "AC 14; MV 40; HD 4+4; hp 30 (15
+wounded); ATK+5; #AT 2; Dmg 1d6/1d6
+(claw/claw); SA squeeze; SZ L (8’ tall); ML unsteady
+(7); Int average (9); AL N; XP 270.
+Note: On a roll of a 20 the victim is pulled into a hug for
+2d8 points of damage; any opponent surprised by the yeti must
+attempt a saving throw vs. paralyzation or be paralyzed for three
+rounds, having looked into the icy blue depths of the yeti’s eyes.
+",
+"Orcs (4)":" AC 14; MV 30; HD 1; hp 6 each;
+ATK+1; #AT 1; Dmg 1d6 (short sword); SW -1
+to attacks and morale in sunlight; SZ M (6’ tall); ML
+steady (11); Int average (8); AL LE; XP 15.
+",
+"Gnoll (1)":" AC 15 (chain mail); MV 30; HD 2; hp
+13; ATK+1; Dmg 1d8 (long sword); SZ L (71/2’
+tall); ML steady (11); Int low (5); AL LE; XP 35.
+",
+
+"Brown bear":" AC 14; MV 20; HD 5+5; hp 32; ATK+ 5; #AT 3; 1d6/1d6/1d8 (claw/claw/bite); SA hug; SZ L
+(9’ tall); ML average (9); Int semi- (3); AL N; XP 420.
+Notes: On a roll of 18 or better the hear hugs its victim for 2d6
+points of damage. The bear also fights until it’s reduced to -10 hp and dies.
+",
+
+"Wild horses (18)":" AC 13; MV 60; HD 2; hp 13
+each; ATK+1; #AT 1; Dmg 1d3 (bite); SZ L; ML
+unsteady (5); Int animal (1); AL N; XP 35.
+",
+
+"Insane Ogre":" AC 15; MV 30, HD 4+1; hp 24, ATK+3;
+#AT 1, Dmg 1d10+2 (fist); SZ L (9’ tall), ML fearless
+from madness (20), Int low (5), AL CE; XP 270.
+",
+
+"Bugbear":" AC 15 (chain mail); MV 30; HD 3+1; hp
+16; ATK +3; #AT 1; Dmg 1d8+2 (axe); SA +2
+damage due to strength; SZ L (7™ tall); ML steady
+(12); Int average (8); AL CE; XP 120.
+  ",
+
+"Frost lizards (2)":".  AC 14; MV 30  glide on snow or ice 40; HD 2; hp 13
+each; ATK+ 1 AT 2; Dmg 1d4 X 2 (claw X 2);
+SA Glide; Spit ice ball (10™ range, one every other
+round for 1d8 points of damage; attempt a saving
+throw vs. breath weapon for half damage); SD invisi-
+ble on snow when not moving; SZ S (3™) ML steady
+(12); Int semi- (3); AL N; XP 65 each.
+",
+"Giant owl":" AC 14; MV 10, Fl 18 (E), HD 4; hp 24;
+ATK +3 ; #AT 3; Dmg 2d4/2d4/1d4+1
+(claw/claw/bite), SA -6 penalty to surprise; SZ L, ML
+steady (11), Int semi- (2); AL N; XP 270.
+a total of 9 gp on them.
+",
+"Wolves (2)":" AC 13; MV 50; HD 3; hp 15 each;
+ATK +2; #AT 1; Dmg 1d4+1 (bite); SZ S
+(3™-4™); ML average (10); Int low (5); AL N; XP 65.
+",
+"Giant lynx (2)":" AC 14; MV 30; HD 12+2; hp 14 each;
+ATK +1; #AT 3; Dmg 1d2/1d2/1d2 (claw/
+claw/bite); SA rake,  SD hide in shadows, de-
+tect traps; SZ M (4½™ tall); ML average (11); Int very
+(12); AL N, XP 175.
+Notes: If a lynx strikes with both of its front paws it receives
+a rake from its rear claws, doing 1d3/1d3 points of damage; .XP 420.
+A lynx has a 90% chance of hiding in shadows and can de-
+tect traps at 75%.
+",
+"Hoar foxes (2)":" AC 14; MV 40; HD 2; hp 10, 12;
+ATK +1; #AT 1; Dmg 1d6 (bite); SA breath
+weapon; SD immune to cold-based attacks; SW dou-
+ble damage from fire; SZ S (3™ long); ML unsteady
+(5); Int semi- (2); AL N; XP 120.
+Notes: The hoar fox has a breath weapon, a cone of cold
+air, causing 2d6 points of damage with a range of 30™ that is
+only wide enough to catch one victim; attempt a saving
+throw vs. breath weapon for half damage.
+",
+
+"Frost man":" AC 15; MV 30; HD 4; hp 28; THAC0 Atk +3;
+#AT 1, Dmg 1d8 (battle axe); SA ice blast (cone of icy
+mist 35™ long and 10™ wide as its widest; 3d6 points of
+damage, attempt a saving throw vs. breath weapon for
+half damage); ML steady (12); Int average (10); AL LN;
+XP 420.",
+
+"Kalas Winters": "hm F5 (owner/innkeeper): AC 12; MV 30; hp 42; THAC0 ATK +4 ; #AT 1; Dmg 1d8+1 (long sword +1), 1d4+2 (dagger +2);
+SZ M (6™ 3l™); ML elite (14); Int very (11); AL CG; XP 420.
+Special Equipment: ring of protection +2, long sword +1, dagger +2
+",
+
+"Beartrid Winters": "hf F0 (owner’s wife/hostess): AC 10; MV 30; hp 3; ATK +0;
+#AT 1; Dmg 1d6 (pan); SZ M (5’ 4”); ML steady (11); Int very (12); AL LG; XP 15.
+",
+
+"Sims Winters": "hm F0 (owner’s son/cook): AC
+10; MV 30; hp 4; ATK +0; #AT 1; Dmg 1d4
+(dagger); SZ M (5’ 8”); ML elite (13); Int average
+(9); AL N; XP 15."
+
+"Dorthy Winters":" hf F0 (owner’s
+daughter/cook): AC 13; MV 30; hp 4;
+ATK +0; #AT 1; Dmg 1d3 (knife); SZ M (5’ 5”);
+ML steady (12); Int average (10); AL LG; XP 15.
+",
+
+"Tairis":" hf F0 (barmaid): AC 10; MV 30; hp 2;
+ATK +0; #AT 1; Dmg 1d3 (knife); SZ M (5’6”.);
+ML steady (11); Int average (9); AL CG; XP 15.
+",
+
+"Kinnuki":"hm F13/C4: AC 21;
+MV 40; hp 96; ATK +12;
+#AT 2; Dmg 2d6+6 (Str and great axe +2); SZ L (7™
+tall/360 lbs.); ML fearless (20); AL CG; XP 5,000.
+S 18/89, D 17, C16, I14, W16, Ch 15.
+Notes: Ring of elemental command (water) allows move-
+ment through solid ice, acts as ring of warmth; pendant imbues
+wearer with ability to detect animals in a 120-foot radius.
+Personality: Kind, helpful.
+Special Equipment: great axe +2, spear +1, bracers of
+defense AC 2, ring of elemental command (water).
+Spells (5/4): 1stŠ bless, cure light wounds X3, purify
+food and drink; 2nd— augury, hold person, produce flame,
+slow poison.
+",
+
+
+"Derek, Captain of the Guard (skeleton, unique)":"
+AC 16 ; MV 20; HD 4; hp 25; ATK +3;
+#AT 1; Dmg 2d4+1 (broad sword +1); SD piercing and
+slashing weapons do half damage.; immune to sleep,
+hold, charm and cold-based spells; SW holy water
+causes 2d4 damage per vial; SZ M (6™ 6l™); ML fearless
+(20); Int low (5); AL N; XP 650.",
+
+
+"Zombie": "AC 16 (rusty plate mail); MV 20; HD 2; hp
+11; Atk +1; #AT 1; Dmg 1d8 (fist); SD immune
+to sleep, charm, hold, and cold-based spells; Size M
+(6™); ML fearless (20); Int non- (0); AL N; XP 65.
+",
+
+"Starved mimic":" AC 13; MV 10; HD 7 (currently 4);
+hp 20; Atk +7; #AT 1; Dmg 3d4 (smash); SA
+glue,  SD hide immune to acid;
+Size L (8™); ML champion (15); Int average (9); AL
+N; XP 270.
+Notes: The mimic covers itself with a glue-like substance.
+Any creature or item that touches a mimic is held fast. Alcohol
+weakens the glue in three rounds, enabling the character to
+break free, or the character may attempt to make an Escape Artist
+ check to break free. Only one attempt may be made per
+character, and no other action, offensive or defensive, may be
+performed during the round that the attempt is being made. A
+mimic may neutralize its glue at will; the glue dissolves five
+rounds after the mimic dies.
+",
+
+"Monster skeleton":" AC 14; MV 30; HD 6; hp 27;
+Atk +5; #AT 1; Dmg 1d10 (great axe) or 1d8
+(punch); SD immune to all sleep, charm, hold, and
+cold-based spells; edged or piercing weapons inflict
+only half damage; SW holy water causes 2d4 damage
+per vial; SZ L (10™); ML fearless (20); Int non- (0);
+AL N; XP 650."
+
+
+"Celerum the Black (Peddywinkle)":{
+"Description": "Celerum is 35 years old, 6™ 2ld tall, and
+thin. He has blond hair and piercing blue eyes.
+Celerum dresses in a jet-black robe of the finest weave
+with a jewel-inlaid gold belt.",
+"Personality": "Celerum is arrogant, cold, and calculat-
+ing. He is completely amoral and will do anything that
+furthers his own ends."
+"History": "While researching spells for the late Dendy-
+bar the Mottled, Celerum came across excerpts from
+the diary of Damien Morienus. The diary contained
+references to some type of potion of great power but
+failed to describe the process of making it. Intrigued,
+Celerum delved deeper into the archives of the Host-
+tower, eventually discovering that Damien had a re-
+search tower somewhere in Icewind Dale. He also dis-
+covered that Damien, a former master of the North
+Spire himself, was actually working on a recipe for lich-
+dom but had not completed it before he mysteriously
+disappeared with his tower. The tower™s disappearance
+also coincided with a period of the Dale™s history called
+the Great Thaw. Finding no further reference to
+Damien, Celerum decided to search for himself.
+Celerum traveled throughout Icewind Dale with a
+friendly merchant, Boswell C. Peddywinkle. Peddywin-
+kle had been traveling to the Dale for years, trading in
+the valuable scrimshaw, and who had an impressive
+network already set up for fishing on the lakes. Seeing
+this as an opportunity too good to pass up, Celerum
+killed Peddywinkle along the road and, using his hat of
+disguise, has assumed the merchant™s identity.
+","Merchant Persona": "Boswell C. Peddywinkle",
+"Description": "Boswell is 5™ 4ls and quite pudgy, with a
+regal look to him. He is around 50 years old, with a
+great handlebar mustache and bright blue eyes. He has
+very little hair left and what is there is pure white. He is
+dressed in rich courtly dress.",
+"Personality": "Peddywinkle is very friendly, outgoing,
+and talkative. He delights in the telling of fanciful sto-
+ries about his exploits such as when he acquired a very
+rare bauble that was a gift from the beautiful queen of
+Salsa, who, by the way, was quite smitten with him.
+Long-term goal: Peddywinkle/Celerum wants
+Damien™s diary. If the PCs prevent him from getting it,
+telligent monsters, or thieves) either to get the book if
+the PCs have it or for revenge if they destroyed it (or
+otherwise kept it from him). If the PCs foil his plan,
+they™ll earn themselves a long-term foe in Celerum,
+and perhaps all of the forces of the Hosttower of
+Luskan."},
+
+"Rumblebelly":{
+"Regis": "halfling male R7: AC 16 (leather, Dex); MV 12; hp
+35; ATK +3; #AT 1; Dmg by weapon; SZ S (3™); ML
+elite (13) AL NG.
+",
+"Special Equipment":" +2 luck stone, ruby pendant of be-
+guiling (acts as a rod of beguiling), and a mace +2.
+S 10, D 17, C 15, I 13, W 15, C 15.
+Description: Regis is barely 3’ tall with curly brown
+hair and a belly that hangs far over his belt.",
+"Skills":" Pickpocket 10,  Move Silently 12, Hide 16",
+ "Personality": "Regis is good-natured though lazy, and
+not malicious in the least. He’s quite sly and enjoying
+in fooling the foollish every once in a while. When the
+chips are down, his friends can count on Regis to come
+through for them."
+}
+
+"Male Drow (Dark Elf), 16th-Level Ranger":{
+"Attack Bonus": "+16/+11/+6/+1 (primary weapon), +17/+12 (secondary weapon).",
+"Skills": Animal Empathy +6, Bluff +3, Climb +5, Handle Animal +5, Heal +4, Hide +12, Intuit Direction +9, Jump +5, Listen +6, Move Silently +12, Ride +8, Rope Use +4, Search +8, Spot +9, Track +12, Wilderness Lore +10
+"Feats": Ambidexterity (ranger bonus feat), Blind-Fight, Dodge, Expertise, Improved Initiative, Improved Two-Weapon Fighting, Lightning Reflexes, Two-Weapon Fighting (ranger bonus feat)
+"Ranger Spells (3/3/2/1)": "Drizzt is a follower of Mielikki, the goddess of the forest. Ranger spells he typically has prepared include: 1st--animal friendship, entangle, pass without trace; 2nd--detect evil, hold animal, protection from elements; 3rd --control plants, neutralize poison; 4th--nondetection.
+",
+"Special": "As a ranger, Drizzt gains a bonus to Bluff, Listen, Spot, and Track, as well as damage rolls against the following types of creatures: goblinoids (+4), magical beasts (+3), evil outsiders (+2), and vermin (+1). As a drow, he can use the following spell-like abilities, each once per day, as a sorcerer of his level: dancing lights, faerie fire, and darkness. He has darkvision and +2 to saving throws against spells and spell-like effects; he’s lost his normal spell resistance, as he’s been on the surface too long.
+",
+"Languages": "Drizzt speaks Common, Elven, Dwarven, and Undercommon (the language of the Underdark).",
+
+"Possessions": "mithral chain mail +4, a frostbrand +3 scimitar (named Icingdeath), a defender +5 scimitar (named Twinkle), and a figurine of wondrous power, an onyx panther named Guenhwyvar (see the end of this entry for more information). Drizzt carries a mix of adventuring gear, including some drow and dwarven equipment.",
+
+"Appearance": "Somewhat larger than a typical dark elf, Drizzt stands 5’4' and weighs about 130 lbs. His handsome features are sharp and well proportioned; his white hair is long, flowing, and smooth. His violet eyes are windows to his passionate soul. He normally wears a fur-collared forest-green cloak and high black boots. It has been more than 70 years since he first ventured into the surface world and at present he is in the neighborhood of 140 years old—still a young adult by elven standards.",
+
+"Background":" It would be impossible to recount all of Drizzt's legendary adventures (described in a series of novels by R. A. Salvatore, see Sources). The major events of his life are described here.
+Drizzt was born into the ninth house of Menzoberranzan, called Daermon N’a’shezbaernon, more commonly known as Do’Urden, on the night when that house wiped out one of its rivals. As a male in the matriarchal society of the drow, Drizzt was trained by his father, Zaknafein, to be a warrior.
+Drizzt was first dienchanted and then disgusted by the corrupt, vicious nature of drow culture. He sought some means of escape. In the meantime, his family came to realize his abhorrent (to them) principles, and his father, the house’s Weapons Master, gave his life to save his son when the family’s matriarch wanted Drizzt executed as a traitor.
+The path of Drizzt’s life took an irrevocable turn away from the evil ways of his kind when he killed Masoj Hun’ett, a drow who had been using a figurine of wondrous power for tawdry assassinations and other detestable work. In the magical panther named Guenhwyvar, Drizzt sensed a kindred spirit -- a fierce but brave and loyal warrior trapped in the drow’s dark world of deceit. Drizzt liberated Guen from Hun’ett, and later fled Menzoberranzan entirely.
+He and Guen wandered the Underdark for a decade, always moving, until they found a grotto tended by the fungus people known as the myconids. While there was life here, Drizzt was still profoundly lonely. His only companion was Guen, and the magic that brought her to this world also sent the cat away all too often.
+Not long thereafter, he discovered a city of svirfneblin, gnomes that live in the Underdark. This was what he had been seeking: a civilization that valued the same concepts of honor, loyalty, and goodness that he did. Careful not to reveal himself to the gnomes right away, Drizzt stealthily made his way into, around, and then back out of the city he learned was called Blingdenstone.
+Later, convinced that this was the life he was destined to have, Drizzt reentered the city -- only to be taken prisoner by the wary gnomes. Fortunately, he came into contact with a deep gnome he had met once before. Before Drizzt fled from drow society, he had been assigned to go on a patrol. This patrol encountered a group of deep gnomes and killed them all -- except for one warrior named Belwar Dissengulp. Drizzt, hoping to save at least one life from being massacred, pleaded with the other elves to spare this one’s life -- arguing that it would be better to allow him to return to his people and tell of drow ferocity than just leave another corpse. Drizzt’s brother Dinin did agree to let the gnome live, but chopped off both of Belwar’s hands first.
+When Drizzt again met Belwar, the gnome had two great metal hammers attached to his wrists in place of his hands. Belwar, remembering that Drizzt had saved his life, convinced the other gnomes to give him a chance. Drizzt proved himself soon thereafter when he, Belwar, and a pech named Clacker who had been polymorphed into a hook horror by a mad wizard worked together to defeat the wizard and the mind flayers that were in the area. During this time Drizzt also found himself facing his deceased father in combat. Zaknafen had been brought back as one of the undead by an unholy drow ritua. But, knowing that the creature was not truly his father, Drizzt spared no effort in destroying it.
+Feeling he needed to put yet more distance between himself and his drow past, Drizzt fled to the surfilce world, where he witnessed a sunrise for the first time in his life.
+He eventually met the blind ranger Montolio "Mooshie" DeBrouchee, who taught Drizzt the ways of the surface world and the concepts of being a ranger, and introduced him to the existence of the goddess Mielikki, the Lady of the Forest. With Mooshie’s help, Drizzt began his career as a ranger, defeated a large band of orcs, and vanquished a pair of barghests.
+After Mooshie passed away, Drizzt again took to wandering, this time on the surfac world. After a time he came to Icewind Dale and the region known as Ten Towns. Under the terms of a deal he made with Cassius, the region’s leader, Drizzt took up residence in the area in exchange for his regular patrolling of the region to watch out for incursions of barbarians. 
+Before long, Drizzt met the dwarf who was to become one of his dearest friends: Bruenor Battlehammer, who busy battling a remorhaz at the time. By the time Drizzt arrived to help, the beast was dead. Drizzt also came to know the dwarf’s adopted human daughter Catti-brie and the halfling Regis.
+When Bruenor spared the life of one of the barbarians who later attacked Ten Towns, Drizzt became acquainted with Wulfgar. Over time, the young man matured, due in no little measure to Drizzt’s training him to use his brain as well as his brawn in battle. 
+This training was put to good use when a power-mad mage attacked Ten Towns with a horde of humanoids. The townsfolk, barbarians, and heroes defeated the humanoids, and Drizzt overcame the tanar’ri Errtu.
+Drizzt and the other members of the band later accompanied Bruenor on his quest to retake his ancestral homeland, Mirthal Hall. It was here that Drizzt met for the first time the man who would become his nemesis. The human assassin Artemis Entreri was originally after Regis the halfling, but found his mirror image, and his real foe, in Drizzt. After a battle with Drizzt that proved inconclusive, Artemis kidnapped Regis, and the heroes followed him all the way to the distant southern city of Calimport to rescue their friend. Drizzt and Artemis met once more, but again there was no clear winner.
+After releasing Regis, the heroes returned north and did reconquer Mithral Hall. All seemed peaceful for a time, but then drow spies found a way into Mirthral Hall from below, and Artemis returned, magically disguised as Regis.
+Drizzt eventually found where Artemis was holding the real Regis, and the ranger and the assassin again did battle. They were both attacked by drow before any conclusion could be reached, however. They fought again later, and Artemis fell over a cliff. Wulfgar met his end at this time when, caught in the grasp of a handmaiden of Lolth, he used his magical hammer to collapse the ceiling onto them both.
+Drizzt soon decided that he had to return to Menzoberranzan to put an end to the drow meddling in his life, and Catti-brie followed him. The pair eventually discovered that Artemis was still alive and working for the drow -- though he suspected he was being used and would be killed as soon as he had done what the drow wanted of him. When the time came to flee back to the surface, the three of them worked together to defeat the drow. Artemis and Drizzt seemed to have come to an accord and parted without further violence.
+The same could not be said for Drizzt's other enemies. The drow, the fiend Errtu, and others all conspired in an attempt to bring down Drizzt and Mithral Hall. An army of drow and humanoid slaves invaded, and it took the combined forces of the dwarves, the deep gnomes, and the humans to defeat them.
+Deciding again it was time to move on, Drizzt and his dear friend Catti-brie rode away from Mithral Hall. At present that is where Drizzt's tale ends -- but what is yet to be told is likely to be as thrilling as what has come before.",
+
+"Sources": "Homeland, Exile, Sojourn, The Crystal Shard, Streams of Silver, The Halfling’s Gem, The Legacy, Starless Night, Siege of Darkness, Passage to Dawn, The Silent Blade, Spine of the World, Servant of the Shard (October 2000)",
+
+"Guenhwyvar": "Medium magical beast; HD 6d8+18; hp 45; Init +7 (Improved Initiative); Spd 30'; AC 16; Atk +11/+11/+6 melee (1d4 [x2] claws, 1d12 bite, 2d4 [x2] rake if both claws hit); SA spring; SD scent; AL N; SV Fort +8, Ref +8, Will +3; Str 22, Dex 16, Con 16, Int 9, Wis 12, Cha 10.
+Skills and Feats: Hide +8, Listen +6, Move Silently +10, Spot +8, Improved Initiative
+Special Attacks: Spring: If Guenhwyvar leaps on a foe during the first round of combat, she can make an all-out attack even if she has taken a move action, she can also make a grapple attack as a free action.
+Special Defenses: Scent: Guenhwyvar can detect other creatures within 30' by scent and gains +8 to tracking rolls.
+Drizzt’s closest companion is the animal that emerges from his figurine of wondrous power, the onyx panther called Guenhwyvar. The panther can be summoned forth from the figurine up to three times per week, for a total of 24 hours altogether during that time. If she is slain while activated, she reverts to the figurine form, and can be called forth again later.
+While Guen cannot speak, it is clear the panther dearly loves her master and his comrades. On occasions too many to number, Guen’s fighting prowess and sharp claws have been the difference between victory and defeat for Drizzt.
+"}
