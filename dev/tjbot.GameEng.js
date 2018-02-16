@@ -1,10 +1,13 @@
-//
+
 //Load Game Script
 //Move this to GameMgr.js
 //
 var fs = require('fs');
 var script = JSON.parse(fs.readFileSync(__dirname+"\\data\\script.json",'utf8'));
 
+var Iplayer = require('./models/player');
+
+var player = Iplayer.create("bob");
 
 //------------------------------
 // Game Engine Processor
@@ -20,10 +23,6 @@ var processor = function(data){
         console.log(script[data]);
     }
 }
-
-
-
-
 
 ///------------------------------>
 // Interface- Console Demo

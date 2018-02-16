@@ -1,0 +1,26 @@
+{
+    "nothing":{
+        "description":"just your bare hands.",
+        "attack":0,
+        "defense":0,
+        "gold":0
+    },
+    "stick":{
+        "description":"A flimsy wooden stick.",
+        "attack":2,
+        "defense":1,
+        "gold":0
+    },
+    "rock":{
+        "description":"A heavy rock.",
+        "attack":2,
+        "defense":0,
+        "gold":0
+    },
+    "flower":{
+        "description":"A pretty flower.",
+        "attack":0,
+        "defense":0,
+        "gold":1
+    }
+}

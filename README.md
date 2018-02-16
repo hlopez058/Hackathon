@@ -363,3 +363,38 @@ var Iarm ={
 modules.export = Iarm;
 
 ```
+
+# Game Engine
+
+What would be the game state? We could simplify our game interaction to something similar to original text dungeon games.
+This would only take a small game state for the player to think about and a definit map to play again and again. 
+
+1. Load A Room
+2. Explain the Room to the player
+3. Get player action
+4. Process player action
+5. If action not understood ask player to try again.
+6. If action is understood
+    1. Update game variables with action
+    2. If variables meet roomm conditions, go to 7
+    3. If variables do not meet room conditions , Explain state of room & go to 3
+7. End room 
+    1.explain room is completed
+    2.ask direction to continue (N,E,S,W). 
+8. Go To 1
+
+
+## What the Rooms are Made Of?
+
+Each room can contain different things. To make the game fun lets imagine some options:
+
+1. Treasure
+2. Monster
+3. NPC,Riddle
+4. Key.. or map.. etc. 
+
+Lets create a "functionality" for each of these events. Can they be done in a fun and interesting way, but still keep the programming to a minimal?
+
+Treasure : We would need to keep an inventory of collected values. Lets keep a running inventory of "money" this way we can use NPC's that provide equipment based on money they can offer. Keeping a system of money in the game can create an illusion of role playing and add a bit more variability to the game. 
+
+Items : Items can be things that the user can choose to equip. For simplicity we can make this a single item at a time. When one item is equipped it can add to the attack and defense of the player. We would also like to have teh DM tell the stats of the item.

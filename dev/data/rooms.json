@@ -1,0 +1,56 @@
+{
+    "1":{
+        "description":"A cave entrance with three doors chisseled into the walls.",
+        "tips":[
+            "There are some items on the floor.",
+            "Walk through one of the doors , North, East, or West"
+        ],
+        "items":["rock","stick"],
+        "doors":{
+            "north":"2",
+            "east":"3",
+            "west":"4"
+        }
+    },
+    "2":{
+        "description":"An empty dark dead end with an ugly smell.",
+        "tips":[
+            "Return through the opposite direction you came.",
+            "There is only one way out",
+            "There is nothing interesting here."
+        ],
+        "items":[],
+        "doors":{
+            "south":"1"
+        }
+    },
+    "3":{
+        "description":"Moss covered walls and water dripping from rocks.",
+        "tips":[
+            "There are some plants growing, try to pickup a flower",
+            "There are three doors , North, East and West.",
+            "Going West, takes you back to the starting point."
+        ],
+        "items":["flower"],
+        "doors":{
+            "north":"32",
+            "east":"33",
+            "west":"1"
+        }
+    },
+    "4":{
+        "description":"Moss covered walls and water dripping from rocks.",
+        "tips":[
+            "There are some plants growing, try to pickup a flower",
+            "There are three doors , North, East and West.",
+            "Going East, takes you back to the starting point."
+        ],
+        "items":["flower"],
+        "doors":{
+            "north":"42",
+            "east":"1",
+            "west":"43"
+        }
+    },
+
+}

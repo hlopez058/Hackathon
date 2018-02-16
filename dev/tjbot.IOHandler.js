@@ -3,13 +3,6 @@
 //==============================
 /*
 
-TODO: 
-1. Create a Visual REconition Service Interface
-2. Troubleshoot Speech-text service 
-3. implement all services with RPI hardware
-4. Unit tests to verify iohandler is still working with drivers
-5. Unit test for npm packages 
-
 //IBM Watson - Visual Recognition Service
 var visual_recognition = new watson.VisualRecognitionV1({
   username: config.visual_recognition.username,
