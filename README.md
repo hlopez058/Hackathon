@@ -1,5 +1,9 @@
 # MakeHackathon 2018 FAU
 
+## Team Orientation
+
+Connected to GitHub (2/16/2018)
+
 ## Objective
 
 Hackathon Objective: Use the TJ-Bot from IBM and the IBM Watson Webservices to build out a clever product. 
