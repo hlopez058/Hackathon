@@ -11,9 +11,9 @@ var player = {
     "items" :[],
     "holding" : "nothing",
     "dead":false,
-    create:function(name){
+    create:function(){
         var obj = Object.create(this);
-        obj.name = name;
+        obj.name = "Adventurer";
         return obj;
     },
     startWithVowel: function(item){

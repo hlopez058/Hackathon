@@ -1,5 +1,6 @@
 #secrets
 *credential*.json
+*config*.json
 
 # Logs
 logs

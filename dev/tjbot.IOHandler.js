@@ -58,6 +58,7 @@ var Ispeech_to_text = {
         });
 
         micInstance.start();
+
         
         //Create textstreamer for microphone
         var textStream = 
@@ -68,16 +69,21 @@ var Ispeech_to_text = {
                     content_type: 'audio/l16; rate=44100; channels=2',
                     model: 'en-US_BroadbandModel'
                 }));
-        textStream.setEncoding('utf8');
+
+                textStream.setEncoding('utf8');
         
         textStream.on('data', function(str) {
             callback(str);
             //console.log(str);
         });
         
+        
+        /*
         textStream.on('error', function(err) {
+           console.log("error occurred in mic");
             callback(str);
-        });
+        });*/
+
     },
     test:function(callback){
         //TODO : Create a Unit Test
@@ -168,7 +174,14 @@ var Iconversation = {
             if (err)
                 console.log('error:', err);
             else
-                callback(response.output.text); 
+                //clean up the data if it comes back from the chatbot
+                var resp =response.output.text.toString();
+                resp = resp.replace('[','');
+                resp = resp.replace(']','');
+                resp = resp.replace('\\','');
+            //resp = resp.replace('\'','');
+                
+                callback(resp); 
         });
     },
     test:function(callback){

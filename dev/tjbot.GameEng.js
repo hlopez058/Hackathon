@@ -1,4 +1,3 @@
-
 //Load Game Script
 //Move this to GameMgr.js
 //
