@@ -36,14 +36,37 @@ console.log("IOHandler Ready.");
 
 var GameMgr = require('./tjbot.GameMgr');
 
+//create a handler for interfacing the 
+//game engine with the io's
 var talkback = function(data){ 
     //Itext_to_speech.speak(data);
-
-    console.log(data);
+    console.log("reply:"+data);    
 }
 
 var IGameMgr = GameMgr.create(bin,talkback,Iconversation);
 
 //uncomment when on RPI hardware :
 //Ispeech_to_text.listen(IGameMgr.parse);
-IGameMgr.parse("Hello");
+
+//some test data to interface with the game manager
+//IGameMgr.parse("Hello");
+
+///------------------------------>
+// Interface- Console Demo
+// (Replace with real Interfaces)
+///------------------------------>
+var readline = require('readline'),
+rl = readline.createInterface(process.stdin, process.stdout);
+rl.setPrompt( '>> ');
+rl.prompt();
+rl.on('line', function(line) {
+
+    //some test data to interface with the game manager
+    IGameMgr.parse(line);
+   
+rl.prompt();
+}).on('close', function() {
+console.log('Have a great day!');
+process.exit(0);
+});
+///------------------------------>

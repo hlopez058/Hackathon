@@ -1,14 +1,15 @@
 {
     "1":{
-        "description":"You ",
+        "description":"A cave entrance with three doors chisseled into the walls.",
         "tips":[
             "There are some items on the floor.",
             "Walk through one of the doors , North, East, or West"
         ],
         "items":["rock","stick"],
-        "triggers":{
-            "yes":"",
-            "no":"3"
+        "doors":{
+            "north":"2",
+            "east":"3",
+            "west":"4"
         }
     },
     "2":{

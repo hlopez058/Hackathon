@@ -1,21 +1,38 @@
 
 //Player Object
 var player = {
-    "name":null,
-    "level":1,
-    "gold":0,
-    "health":100,
-    "attack":10*level,
-    "defense":.10*health,
-    "maxItems":3,
-    "items" :[],
-    "holding" : "nothing",
-    "dead":false,
+    name:null,
+    level:1,
+    gold:0,
+    health:100,
+    maxItems:3,
+    items:[],
+    holding : "nothing",
+    dead:false,
     create:function(){
         var obj = Object.create(this);
         obj.name = "Adventurer";
         return obj;
     },
+    takeDamage(dmg){
+        if(dmg>0){
+        this.health = this.health - dmg;
+        if(this.health <=0 ){
+            this.dead = true;
+        }}
+    },
+    attack:function(){
+        var bonus = 0;
+        for(var i = 0, len = this.items.length; i < len; i++) {
+            bonus += this.items[i].attack; 
+        }
+        return (10*this.level)+bonus;},
+    defense:function(){
+        var bonus = 0;
+        for(var i = 0, len = this.items.length; i < len; i++) {
+            bonus += this.items[i].defense; 
+        }
+        return (0.10*this.health)+bonus;},
     startWithVowel: function(item){
         if(item.startsWith("a") || 
         item.startsWith("e")||

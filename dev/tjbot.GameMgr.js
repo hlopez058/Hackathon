@@ -1,52 +1,25 @@
-
-var Game = {
-    room : null,
-    player: null,
-    running:true,
-    create: function(){
-        var obj = Object.create(this);
-        obj.running = true; 
-        obj.player = require('./models/player').create();
-        game.enterRoom("1");        
-        return obj;
-    },
-    enterRoom : function(id){
-        //read the rooms.json list of room objects
-        var rooms ="";
-        var fs = require('fs');
-        fs.readFile(path + 'rooms.json', 'utf8', 
-        function readFileCallback(err, data){
-            if (err){
-                console.log(err);
-            } else {
-            rooms = JSON.parse(data); 
-        }});
-        this.room = rooms[id];
-    }
-}
-
-
 var GameMgr =  {
-    game:null,
     talk:null,
     path:null,
     newGameReq:false,
     chatbot:false,
+    engine:null,
     create: function(path,talkback,chatbot){
         var obj = Object.create(this);
-        
         //create a gamestate object
-        obj.game= Game.create();
         obj.talk = talkback;
         obj.path =  path ;
         obj.chatbot = chatbot;
-
+        var GameEngine = require('./tjbot.GameEng');
+        obj.engine = GameEngine.create(path,talkback);
         return obj;
     },
     parse:function(data){
         //does the data have a 
         console.log("parsing:" + data);
-
+        //----------------------------------------------
+        // Game Manager Intterrupts
+        //----------------------------------------------
         if(this.newGameReq){
            if(data.toLowerCase().includes('yes')){
                this.newGame();
@@ -77,26 +50,41 @@ var GameMgr =  {
             this.quitGame();
             return;
         }
+        //----------------------------------------------
 
-        //process the input as in-game data request
-        //pass it into the game object
-
-        this.game.input(data);
-        
-
-        //Let Chatbot handle any other statements
-        this.chatbot.write(data,this.talk);
-        
+        //----------------------------------------------
+        // Game Engine Processing input data
+        //----------------------------------------------
+        if(this.engine.game.running){
+            var action = "";
+            //have a chatbot do the nlp
+            this.nlp.write(data,function(resp){
+                action = resp;
+            })
+            var played = this.engine.play(action);
+            //Let Chatbot handle any other statements
+            //todo: make chatbot handle unknown calls
+            //and interrupts like volume, rules, 
+            //tips on the game etc.. 
+            if(!played){
+                this.chatbot.write(data,this.talk);
+            }
+        }else{
+            //let the chatbot handle any intentions
+            //for starting the game
+            this.chatbot.write(data,this.talk);
+        }
+        //----------------------------------------------
     },
     newGame: function(){
-        if(this.game.running && this.newGameReq==false){
+        if(this.engine.game.running && this.newGameReq==false){
             this.talk("Are you sure you would like to start a new game?");
             this.newGameReq = true;
             return;
         }
 
         this.talk("Starting a new game.");  
-        this.game = Game.create();
+        this.engine.start();
         this.newGameReq = false; 
     },
     pauseGame: function(){
@@ -115,15 +103,15 @@ var GameMgr =  {
                 console.log(err);
             } else {
             obj = JSON.parse(data); //now it an object
-            this.game = obj;
+            this.engine.game = obj;
         }});
     },
     quitGame: function(){
-        this.game.running = false;
+        this.engine.game.running = false;
         this.talk("The game has ended.");
     },
     saveGame: function(){
-        var gamedata = JSON.stringify(this.game);
+        var gamedata = JSON.stringify(this.engine.game);
         var fs = require('fs');
         fs.writeFile(this.path + 'gamedata.json', gamedata, 'utf8', function(data){
            if(data!=null){ console.log(data)};
