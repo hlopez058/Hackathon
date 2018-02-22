@@ -1,0 +1,73 @@
+{
+    "1":{
+        "description":"You are standing at the entrance of a dark cave. With a torch in one hand. There are growls coming from the woods behind you. Suddenly, red eyes are stalking you from the trees.",
+        "tips":[
+            "Can you find a way into the cave?",
+            "Hurry. What direction can you go?",
+            "Tell me North, South, East or West so I can lead the way."
+        ],
+        "pickup":"torch",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"There is a human sized gap between the rocks.",
+                "nextroom":"2"
+            },
+            "south":{
+                "desc":"A dark and ominous forest is behind you. You must go into the cave.",
+                "nextroom":""
+            },
+            "west":{
+                "desc":"A cave wall. Try to go north, into the cave.",
+                "nextroom":""
+            },
+            "east":{
+                "desc":"A cave wall. You must enter the cave somehow.",
+                "nextroom":""
+            }
+        },
+        "enter" :{
+            "condition":{
+                "stat" : "fight",
+                "value" : "wolfenstien",
+                "true" :{
+                    "stat" : "level",
+                    "value" : 1,
+                    "desc" :"A beast lunged at you from the woods. Its fangs ready to feast. But your overwhelming power destroyed it in mid-air."
+                },
+                "false" :{
+                    "stat" : "dead",
+                    "value" : true,
+                    "desc" :"A beast lunged at you from the woods. Its fangs sung into your face. You are dead."
+                }
+            }
+        }
+    },
+    "2":{
+        "description":"A cavernous room opens up. The light brightens the opening and shows two tunnels, one to the north, and the other to the east. Beware of dangers! But try to escape what ever is following you. ",
+        "tip":[
+            "There are footsteps going into the east tunnel. But, no footsteps coming out.",
+            "Hurry. there is something following you"
+        ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"A large tunnel.",
+                "nextroom":"2N"
+            },  
+            "south":{
+                "desc":"The crack you came in from.",
+                "nextroom":""
+            },
+            "west":{
+                "desc":"Just A cave wall.",
+                "nextroom":""
+            },
+            "east":{
+                "desc":"A tunnel with markings that look like footsteps.",
+                "nextroom":"2E"
+            }
+        }
+    }
+}

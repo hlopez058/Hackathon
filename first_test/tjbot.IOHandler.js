@@ -18,7 +18,6 @@ var visual_recognition = new watson.VisualRecognitionV1({
 //IBM Watson - Speech to Text Service
 var Ispeech_to_text = {
     speech_to_text:null,
-    mic:null,
     create: function(conf_file){
         var obj = Object.create(this);
         var watson = require('watson-developer-cloud');                    
@@ -30,6 +29,10 @@ var Ispeech_to_text = {
             username: obj.config.credentials.username,
             password: obj.config.credentials.password
         });
+        return obj;
+    },
+    listen: function(callback){
+        // Initiate Microphone Instance to Get audio samples
         var mic = require('mic');
         var micInstance = mic(
             { 
@@ -38,17 +41,12 @@ var Ispeech_to_text = {
                 'debug': false, 
                 'exitOnSilence': 6 
             });
-        obj.mic = micInstance; 
-        return obj;
-    },
-    listen: function(callback){
-        // Initiate Microphone Instance to Get audio samples
         
         var micInputStream = 
-        this.mic.getAudioStream();
+        micInstance.getAudioStream();
         
         micInputStream.on('data', function(data) {
-            //console.log("Recieved Input Stream: " + data.length);
+            console.log("Recieved Input Stream: " + data.length);
         });
         
         micInputStream.on('error', function(err) {
@@ -59,7 +57,7 @@ var Ispeech_to_text = {
             // detect silence.
         });
 
-        this.mic.start();
+        micInstance.start();
 
         
         //Create textstreamer for microphone
@@ -89,11 +87,7 @@ var Ispeech_to_text = {
     },
     test:function(callback){
         //TODO : Create a Unit Test
-        //callback("Speech-To-Text Unit Test: Not Implemented");
-        this.listen(function(data){
-           if(data.includes("stop")){ this.mic.stop();}
-            console.log(data);
-        });  
+        callback("Speech-To-Text Unit Test: Not Implemented");  
     }
 }
 exports.Ispeech_to_text = Ispeech_to_text;
@@ -133,7 +127,7 @@ var Itext_to_speech = {
         var fs = require('fs');
         this.text_to_speech
             .synthesize(params)
-            .pipe(fs.createWriteStream(this.binpath+'output.wav'))
+            .pipe(fs.createWriteStream(this.binpath+"\\"+'output.wav'))
             .on('close', function(){
                 var create_audio = exec('aplay output.wav', 
                     function(error, stdout, stderr) {
@@ -144,7 +138,6 @@ var Itext_to_speech = {
             });    
     },
     test:function(callback){
-        this.speak("Hello World");
         //TODO : Create a Unit Test
         callback("Text-To-Speech Unit Test: Not Implemented");  
     }
@@ -183,7 +176,7 @@ var Iconversation = {
             else
                 //clean up the data if it comes back from the chatbot
                 var resp =response.output.text.toString();
-
+                
                 callback(resp); 
         });
     },

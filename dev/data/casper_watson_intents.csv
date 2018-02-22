@@ -1,0 +1,153 @@
+,DescribeRoom
+What do i do?,Explain
+I am lost,Explain
+Whats going on?,Explain
+what am i supposed to do,Explain
+what do i do now?,Explain
+how do i get out of here?,Explain
+whats the purpose?,Explain
+whats the objective?,Explain
+can i get a clue?,Explain
+how do you play?,Explain
+how do i get around?,Explain
+how do i leave the room?,Explain
+how do i play?,Explain
+what happens if i die?,Explain
+Whats around me?,Explore
+Describe the room,Explore
+What is to my left?,Explore
+What is on my right?,Explore
+What is to my right?,Explore
+What is behind me?,Explore
+Can you tell me whats around?,Explore
+What do i see?,Explore
+Is there anything interesting?,Explore
+Explain the room,Explore
+look closer,Explore
+explore the area,Explore
+whats does the room look like,Explore
+discovery,Explore
+discover,Explore
+Hello,Greeting
+Hello casper,Greeting
+How are you,Greeting
+Hi,Greeting
+whatsup,Greeting
+hey,Greeting
+hey casper,Greeting
+yo,Greeting
+lets play,Greeting
+hi nice to meet you,Greeting
+who are you?,Greeting
+whats up,Greeting
+Go to the east,MoveEast
+I want to go east,MoveEast
+lets fo east,MoveEast
+move east,MoveEast
+navigate east,MoveEast
+show me the east,MoveEast
+east door,MoveEast
+east,MoveEast
+lets try east,MoveEast
+i choose east,MoveEast
+let me go east,MoveEast
+take me east,MoveEast
+show me east,MoveEast
+Go to the north,MoveNorth
+I want to go north,MoveNorth
+Lets go north,MoveNorth
+Move north,MoveNorth
+Navigate north,MoveNorth
+show me the north,MoveNorth
+north door,MoveNorth
+north,MoveNorth
+lets try north,MoveNorth
+I choose north,MoveNorth
+let me go north,MoveNorth
+take me north,MoveNorth
+I want to go south,MoveSouth
+Lets go south,MoveSouth
+show me the south,MoveSouth
+can we go south,MoveSouth
+lets move south,MoveSouth
+go south,MoveSouth
+south,MoveSouth
+lets try south,MoveSouth
+I choose south,MoveSouth
+let me go south,MoveSouth
+take me south,MoveSouth
+show me south,MoveSouth
+go to the west,MoveWest
+i want to go west,MoveWest
+lets go west,MoveWest
+move west,MoveWest
+navigate west,MoveWest
+show me the west,MoveWest
+west door,MoveWest
+west,MoveWest
+lets try west,MoveWest
+i choose west,MoveWest
+let me go west,MoveWest
+take me west,MoveWest
+Show me west door,MoveWest
+can you describe the East,SeeEast
+look at the East door,SeeEast
+can you tell me what the East door looks like?,SeeEast
+describe the East door,SeeEast
+whats East of me?,SeeEast
+whats ahead of me?,SeeEast
+can i see the East?,SeeEast
+Can i see whats towards the East,SeeEast
+Can i see whats towards the north,SeeNorth
+can i see the north?,SeeNorth
+whats ahead of me?,SeeNorth
+whats north of me?,SeeNorth
+describe the north door,SeeNorth
+can you tell me what the north door looks like?,SeeNorth
+look at the north door,SeeNorth
+can you describe the north,SeeNorth
+can you describe the South,SeeSouth
+look at the South door,SeeSouth
+can you tell me what the South door looks like?,SeeSouth
+describe the South door,SeeSouth
+whats South of me?,SeeSouth
+whats ahead of me?,SeeSouth
+can i see the South?,SeeSouth
+Can i see whats towards the South,SeeSouth
+can you describe the West,SeeWest
+look at the West door,SeeWest
+can you tell me what the West door looks like?,SeeWest
+describe the West door,SeeWest
+whats West of me?,SeeWest
+whats ahead of me?,SeeWest
+can i see the West?,SeeWest
+Can i see whats towards the West,SeeWest
+Lets play,StartGame
+yes i want to play,StartGame
+yeah,StartGame
+lets do it,StartGame
+lets go,StartGame
+cool lets play,StartGame
+ok,StartGame
+sure,StartGame
+i do,StartGame
+I want to start over,StartOver
+can we play again?,StartOver
+start over,StartOver
+play again,StartOver
+restart,StartOver
+lets restart,StartOver
+i want to try again from the beginning,StartOver
+Can you give me a hint?,Tips
+Can you give me a clue,Tips
+any clues?,Tips
+anything i should notice?,Tips
+can i have more information?,Tips
+anything special ?,Tips
+is there anything iam missing?,Tips
+i need help,Tips
+i dont know what to do next,Tips
+i need more help,Tips
+how do i get out?,Tips
+where are the exits?,Tips
+now what?,Tips

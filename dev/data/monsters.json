@@ -1,6 +1,10 @@
 {
     "wolfenstien" :{
-        "attack": 400,
-        "defense" : 400
+        "attack": 100,
+        "defense" : 100
+    },
+    "dragon" :{
+        "attack": 100,
+        "defense" : 100
     }
 }

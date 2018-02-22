@@ -1,72 +1,713 @@
 {
     "1":{
-        "description":"You are standing at the entrance of a dark cave. With a torch in one hand. There are growls coming from the woods behind you. Suddenly, red eyes are stalking you from the trees.",
+        "description":"You are in the main room of the castle. The princess is locked in one of the rooms it is up to us to find her. There are is a large entrance north of you. And smaller doors to the east and west. Where do we go first? ",
         "tips":[
-            "Can you find a way into the cave?",
-            "Hurry. What direction can you go?",
-            "Tell me North, South, East or West so I can lead the way."
-        ],
-        "pickup":"torch",
-        "drop":"",
-        "navigation" : {
-            "north":{
-                "desc":"There is a human sized gap between the rocks.",
-                "nextroom":"2"
-            },
-            "south":{
-                "desc":"A dark and ominous forest is behind you. You must go into the cave.",
-                "nextroom":""
-            },
-            "west":{
-                "desc":"A cave wall. Try to go north, into the cave.",
-                "nextroom":""
-            },
-            "east":{
-                "desc":"A cave wall. You must enter the cave somehow.",
-                "nextroom":""
-            }
-        },
-        "enter" :{
-            "condition":{
-                "stat" : "fight",
-                "value" : "wolfenstien",
-                "true" :{
-                    "stat" : "level",
-                    "value" : 1,
-                    "desc" :"A beast lunged at you from the woods. Its fangs ready to feast. But your overwhelming power destroyed it in mid-air."
-                },
-                "false" :{
-                    "stat" : "dead",
-                    "value" : true,
-                    "desc" :"A beast lunged at you from the woods. Its fangs sung into your face. You are dead."
-                }
-            }
-        }
-    },
-    "2":{
-        "description":"A cavernous room opens up. The light brightens the opening and shows two tunnels, one to the north, and the other to the east. Beware of dangers! But try to escape what ever is following you. ",
-        "tip":[
-            "There are footsteps going into the east tunnel. But, no footsteps coming out.",
-            "Hurry. there is something following you"
+            "The door on the west looks like it been used.",
+            "You can ask for more detail about each door."
         ],
         "pickup":"",
         "drop":"",
         "navigation" : {
             "north":{
-                "desc":"A large tunnel.",
-                "nextroom":"2N"
-            },  
+                "desc":"A large entrance with engravings on the side.",
+                "nextroom":"4"
+            },
             "south":{
-                "desc":"The crack you came in from.",
+                "desc":"Thats not an option. We cannot run away!",
                 "nextroom":""
             },
             "west":{
-                "desc":"Just A cave wall.",
+                "desc":"A small door that might benefit you.",
+                "nextroom":"2"
+            },
+            "east":{
+                "desc":"This door looks like its not used alot.",
+                "nextroom":"3"
+            }
+        },
+        "audio": "",
+        "actout":"normal",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : 1,
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : null,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "2":{
+        "description":"You have found the armory. You are now equipped with some armor. But you may want to find a weapon if we are planning to fight the dragon.",
+        "tips":[
+            "There are no exits , go back east to the main room",
+            "Nothing hear but more armor."
+        ],
+        "pickup":"armor",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"Just walls",
+                "nextroom":""
+            },
+            "south":{
+                "desc":"Just walls",
+                "nextroom":""
+            },
+            "west":{
+                "desc":"Just walls",
                 "nextroom":""
             },
             "east":{
-                "desc":"A tunnel with markings that look like footsteps.",
-                "nextroom":"2E"
+                "desc":"Back the way you came",
+                "nextroom":"1"
+            }
+        },
+        "audio": "Chains01.wav",
+        "actout":"happy",
+        "enter" :{
+            "condition":{
+                "stat" : "pickup",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : 1,
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : null,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "3":{
+        "description":"You are now in a room what has a locked door to the east. The door looks sturdy and rarely used. A sentry is trying to detect your face. Look normal!",
+        "tips":[
+            "Looks like this room needs a key i am sure we can find one somewhere.",
+            "Try to keep going into the castle until we find a key.",
+            "This room looks like its protecting something.",
+            "There could also be another way around if we dont find the key."
+        ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"Just walls",
+                "nextroom":""
+            },
+            "south":{
+                "desc":"Just walls",
+                "nextroom":""
+            },
+            "west":{
+                "desc":"Back to the main room",
+                "nextroom":""
+            },
+            "east":{
+                "desc":"A door you cant open, without a key.",
+                "nextroom":"11"
+            }
+        },
+        "audio": "",
+        "actout":"normal",
+        "enter" :{
+            "condition":{
+                "stat" : "visual",
+                "value" : "key",
+                "true" :{
+                    "stat" : "moveRoom",
+                    "value" : "11",
+                    "desc" :"You are able to open the locked door!"
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : null,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "4":{
+        "description":"You have entered a long hallway decorated in banners. It continues down into the north , but there is a small door to the west.",
+        "tips":[
+            "The small door to the west is halfway open.",
+            "The hall to the north is blocked by curtains.",
+            "There could be an enemy to the north."       ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"Curtains that cover the northern entrance",
+                "nextroom":"5"
+            },
+            "south":{
+                "desc":"return to the main room",
+                "nextroom":"1"
+            },
+            "west":{
+                "desc":"A small door that halfway open",
+                "nextroom":"8"
+            },
+            "east":{
+                "desc":"Just walls",
+                "nextroom":""
+            }
+        },
+        "audio": "",
+        "actout":"normal",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : null,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "8":{
+        "description":"You have entered a kitchen with a door to the north and a door to the west. There seems to be something stored in both rooms.",
+        "tips":[
+            "Be carefule, we never know what they store here",
+            "I heard the kitchen is the best place to hide secrets"
+            ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"A heavy door that looks like it stores valuables.",
+                "nextroom":"9"
+            },
+            "south":{
+                "desc":"nothing",
+                "nextroom":""
+            },
+            "west":{
+                "desc":"A shiny door that looks like a freezer",
+                "nextroom":"10"
+            },
+            "east":{
+                "desc":"back where you came from",
+                "nextroom":"4"
+            }
+        },
+        "audio": "",
+        "actout":"normal",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : null,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "10":{
+        "description":"A bunch of spiders leaped out of the old freezer and started attacking your face.",
+        "tips":[
+            "Be carefule, we never know what they store here",
+            "I heard the kitchen is the best place to hide secrets"
+            ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"nothing",
+                "nextroom":""
+            },
+            "south":{
+                "desc":"nothing",
+                "nextroom":""
+            },
+            "west":{
+                "desc":"nothing",
+                "nextroom":""
+            },
+            "east":{
+                "desc":"nothing",
+                "nextroom":""
+            }
+        },
+        "audio": "",
+        "actout":"normal",
+        "enter" :{
+            "condition":{
+                "stat" : "die",
+                "value" : true,
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : null,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "9":{
+        "description":"You have entered a room containing a shiny key. The key has an image of the sun on it. There is a door to the east.",
+        "tips":[
+            "The eastern door leads back to the main hall.",
+            "I heard the kitchen is the best place to hide secrets"
+            ],
+        "pickup":"key",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"nothing",
+                "nextroom":""
+            },
+            "south":{
+                "desc":"back to the kitchen",
+                "nextroom":"8"
+            },
+            "west":{
+                "desc":"nothing",
+                "nextroom":""
+            },
+            "east":{
+                "desc":"An entrance to the great hall",
+                "nextroom":"5"
+            }
+        },
+        "audio": "",
+        "actout":"happy",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : true,
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : null,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "5":{
+        "description":"You peel away the curtains of the great hall and, see two trolls trying to scare you. Pick on them before they pick on you and they might just run away. there is a door with a crest north and two doors east and west.",
+        "tips":[
+            "Say something mean they scare easy",
+            "the door north has a crest that looks like a sword.",
+            "the doors east and west look the same"        ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"Door with sword crest on it",
+                "nextroom":"6"
+            },
+            "south":{
+                "desc":"Return to the hall",
+                "nextroom":"4"
+            },
+            "west":{
+                "desc":"A regular door",
+                "nextroom":"9"
+            },
+            "east":{
+                "desc":"Another regular door",
+                "nextroom":"12"
+            }
+        },
+        "audio": "monster2.wav",
+        "actout":"danger",
+        "enter" :{
+            "condition":{
+                "stat" : "scare",
+                "value" : "trolls",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :"Great job that was really mean. They can dish it but cant take it."
+                },
+                "false" :{
+                    "stat" : "die",
+                    "value" : true,
+                    "desc" :"That didnt really work. They didnt seem phased."
+                }
+            }
+        }
+    },
+    "12":{
+        "description":"You entered a chamber room. It is very small and there is a room to the south. and a room to the east. Be careful i hear, noises.",
+        "tips":[
+            "There are wierd noises around here"
+            ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"Just walll",
+                "nextroom":""
+            },
+            "south":{
+                "desc":"A half open, skinny door.",
+                "nextroom":"13"
+            },
+            "west":{
+                "desc":"Back the way you came",
+                "nextroom":"5"
+            },
+            "east":{
+                "desc":"Another regular door",
+                "nextroom":"14"
+            }
+        },
+        "audio": "ghost01.wav",
+        "actout":"danger",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : true,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "13":{
+        "description":"You are suddenly surrounded by ghosts and fall into a dark pit!",
+        "tips":[
+            "You are eaten by ghosts"
+            ],
+        "pickup":"",
+        "drop":"armor",
+        "navigation" : {
+            "north":{
+                "desc":"",
+                "nextroom":"1"
+            },
+            "south":{
+                "desc":"",
+                "nextroom":"1"
+            },
+            "west":{
+                "desc":"",
+                "nextroom":"1"
+            },
+            "east":{
+                "desc":"",
+                "nextroom":"1"
+            }
+        },
+        "audio": "ghost02.wav",
+        "actout":"danger",
+        "enter" :{
+            "condition":{
+                "stat" : "die",
+                "value" : true,
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :"You have been eaten by flesh eating ghosts as you fall into a dark abysss.. so sorry."
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : true,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "14":{
+        "description":"You entered a dark spiral stairway. Get your weapons ready there seems to be something north of us.",
+        "tips":[
+            "Get out if you dont want a fight."
+            ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"top of the stairs there are flames lighting up the entrance",
+                "nextroom":"15"
+            },
+            "south":{
+                "desc":"nothing",
+                "nextroom":""
+            },
+            "west":{
+                "desc":"Back the way you came",
+                "nextroom":"12"
+            },
+            "east":{
+                "desc":"nothing",
+                "nextroom":""
+            }
+        },
+        "audio": "Fire2.wav",
+        "actout":"danger",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : true,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "15":{
+        "description":"A large scaley dragon has emerged from the shadows and is growling at you. You dash into battle fearleslly.",
+        "tips":[
+            "You are fighting a dragon!"
+            ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"nothing",
+                "nextroom":"17"
+            },
+            "south":{
+                "desc":"nothing",
+                "nextroom":"17"
+            },
+            "west":{
+                "desc":"nothing",
+                "nextroom":"17"
+            },
+            "east":{
+                "desc":"nothing",
+                "nextroom":"17"
+            }
+        },
+        "audio": "Explosion2.wav",
+        "actout":"danger",
+        "enter" :{
+            "condition":{
+                "stat" : "fight",
+                "value" : "dragon",
+                "true" :{
+                    "stat" : "wins",
+                    "value" : "",
+                    "desc" :"You have vanquished the dragon with your strength and courage. You are amazing!"
+                },
+                "false" :{
+                    "stat" : "die",
+                    "value" : true,
+                    "desc" :"You have been destroyed by the powerful dragon!"
+                }
+            }
+        }
+    },
+    "17":{
+        "description":"You have saved the princess! Thank you so much.",
+        "tips":[
+            ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"nothing",
+                "nextroom":"1"
+            },
+            "south":{
+                "desc":"nothing",
+                "nextroom":"1"
+            },
+            "west":{
+                "desc":"nothing",
+                "nextroom":"1"
+            },
+            "east":{
+                "desc":"nothing",
+                "nextroom":"1"
+            }
+        },
+        "audio": "lightapplause.wav",
+        "actout":"happy",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : true,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "6":{
+        "description":"You have entered into a throne room with a large sword laying there for you're taking. There is a tiny door to the west.",
+        "tips":[
+            "You automatically pick up the sword."
+            ],
+        "pickup":"sword",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"nothing",
+                "nextroom":""
+            },
+            "south":{
+                "desc":"back where you came from",
+                "nextroom":"5"
+            },
+            "west":{
+                "desc":"Tiny door is there anything there?",
+                "nextroom":"7"
+            },
+            "east":{
+                "desc":"nothing",
+                "nextroom":""
+            }
+        },
+        "audio": "",
+        "actout":"normal",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : true,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "7":{
+        "description":"You have fallen into a trap door and got eaten by a monster.",
+        "tips":[
+            ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"nothing",
+                "nextroom":"1"
+            },
+            "south":{
+                "desc":"nothing",
+                "nextroom":"1"
+            },
+            "west":{
+                "desc":"nothing",
+                "nextroom":"1"
+            },
+            "east":{
+                "desc":"nothing",
+                "nextroom":"1"
+            }
+        },
+        "audio": "slimer.wav",
+        "actout":"danger",
+        "enter" :{
+            "condition":{
+                "stat" : "",
+                "value" : "",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :""
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : true,
+                    "desc" :""
+                }
+            }
+        }
+    },
+    "11":{
+        "description":"You have entered into a room with a big face asking you why he should let you pass. He wants to give you a riddle . Never resting, never still. Moving silently from hill to hill. It does not walk, run or trot, All is cool where it is not. What is it?",
+        "tips":[
+            "solve the riddle to get by, or find another way"
+            ],
+        "pickup":"",
+        "drop":"",
+        "navigation" : {
+            "north":{
+                "desc":"A giant face on the wall with a door behind , that loves riddles.",
+                "nextroom":"1"
+            },
+            "south":{
+                "desc":"back the way you came",
+                "nextroom":"3"
+            },
+            "west":{
+                "desc":"nothing",
+                "nextroom":"1"
+            },
+            "east":{
+                "desc":"nothing",
+                "nextroom":""
+            }
+        },
+        "audio": "",
+        "actout":"normal",
+        "enter" :{
+            "condition":{
+                "stat" : "riddle : Never resting, never still. Moving silently from hill to hill. It does not walk, run or trot, All is cool where it is not. What is it?",
+                "value" : "sunshine",
+                "true" :{
+                    "stat" : "",
+                    "value" : "",
+                    "desc" :"That is a great answer , you save yourself from alot of work by bieng smart."
+                },
+                "false" :{
+                    "stat" : "",
+                    "value" : true,
+                    "desc" :"You should try to find another way around."
+                }
             }
         }
     }
